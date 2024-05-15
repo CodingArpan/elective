@@ -13,7 +13,7 @@ const dataSchema = new Schema({
 });
 const Data = mongoose.model('Data', dataSchema);
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 const enrdata = [
